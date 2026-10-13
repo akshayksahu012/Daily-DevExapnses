@@ -1,0 +1,7 @@
+.expense-filters { display: flex; flex-wrap: wrap; gap: 1rem; animation: fadeIn 0.6s ease 0.1s both; }
+.expense-filters label { display: flex; flex-direction: column; gap: 0.25rem; font-size: 0.8rem; font-weight: 600; color: var(--muted); }
+.expense-filters input, .expense-filters select {
+  padding: 0.5rem 0.8rem; border: 1px solid var(--border); border-radius: 10px;
+  background: var(--surface); color: var(--text); transition: border-color 0.2s, box-shadow 0.2s;
+}
+.expense-filters input:focus, .expense-filters select:focus { outline: none; border-color: var(--primary); box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.15); }

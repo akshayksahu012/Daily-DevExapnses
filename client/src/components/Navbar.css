@@ -1,0 +1,18 @@
+.navbar {
+  position: sticky; top: 0; z-index: 10;
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 0.8rem 1.5rem; background: var(--surface);
+  border-bottom: 1px solid var(--border);
+  animation: fadeIn 0.5s ease;
+}
+.navbar__brand { font-weight: 800; font-size: 1.2rem; color: var(--primary); }
+.navbar__right { display: flex; align-items: center; gap: 1rem; }
+.navbar__profile { display: flex; align-items: center; gap: 0.6rem; }
+.navbar__avatar {
+  width: 36px; height: 36px; border-radius: 50%; display: grid; place-items: center;
+  background: var(--primary); color: #fff; font-weight: 700;
+  transition: transform 0.2s ease;
+}
+.navbar__profile:hover .navbar__avatar { transform: scale(1.1) rotate(-6deg); }
+.navbar__name { font-weight: 600; }
+@media (max-width: 520px) { .navbar__name { display: none; } }
