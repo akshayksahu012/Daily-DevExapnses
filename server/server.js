@@ -11,6 +11,7 @@ app.use(express.json());
 
 app.use('/api/auth', require('./routes/authRoutes'));
 app.use('/api/expenses', require('./routes/expenseRoutes'));
+app.get('/api/health', (req, res) => res.json({ status: 'ok' }));
 
 app.use(errorHandler); // must be last
 
